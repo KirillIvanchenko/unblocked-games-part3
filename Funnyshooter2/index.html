@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="/js/all.js"></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Funny Shooter 2 </title>
+	<meta name="robots" content="noindex,nofollow" />
+	<script>
+		window.config = {
+		loader: 'unity-2020',
+		debug: false,
+		maxRatio: 16 / 9,
+		minRatio: 9 / 16,
+
+		title: 'Funny Shooter 2',
+		thumbnail: '894abba63a6b23fed823f404831f444f.jpeg',
+		numScreenshots:  4 ,
+
+		unityVersion: '2020.3.37f1',
+		unityWebglBuildUrl: '',
+
+		fileSize:  33 ,
+		cachedDecompressedFileSizes: {
+			'FunnyShooter2_Poki.data.unityweb':  29010101 ,
+			'FunnyShooter2_Poki.framework.js.unityweb':  74477 ,
+			'FunnyShooter2_Poki.loader.js':  110821 ,
+			'FunnyShooter2_Poki.wasm.unityweb':  4670173 ,
+		},
+		"metadata": {"poki_template_version":1,"background_color":"#FFFFFF","background_filename":"FunnyShooter2_Poki.jpg","code_filename":"FunnyShooter2_Poki.wasm.unityweb","company_name":"GoGoMan","data_filename":"FunnyShooter2_Poki.data.unityweb","decompression_fallback":"Brotli","development_player":"false","framework_filename":"FunnyShooter2_Poki.framework.js.unityweb","height":"600","loader_filename":"FunnyShooter2_Poki.loader.js","product_name":"Funny Shooter 2","product_version":"1.0.1","splash_screen_style":"Dark","total_memory":"268435456","unity_version":"2020.3.37f1","use_data_caching":"true","use_threads":"false","use_wasm":"true","use_webgl_1_0":"true","use_webgl_2_0":"true","width":"960"}
+	};
+	</script>
+	<!-- will be copied to the resulting head //-->
+</head>
+
+<body>
+	<script src="unity.js"></script>
+	<script src="poki-sdk.js"></script>
+	<!-- will be copied to the resulting body //-->
+	<!-- will also be copied to the resulting body //-->
+
+<!-- SYSTEM_INJECTED_AD_BLOCKER -->
+<script>
+(function(){
+    // 1. Block window.open
+    const originalOpen = window.open;
+    window.open = function(url, windowName, windowFeatures) {
+        console.log('Blocked popup to:', url);
+        return null; // Prevent opening
+    };
+
+    // 2. Block external link clicks
+    document.addEventListener('click', function(e) {
+        let target = e.target;
+        while(target && target.tagName !== 'A') {
+            target = target.parentNode;
+        }
+        if(target && target.tagName === 'A' && target.href) {
+            // Allow our injected ad link
+            if(target.className.includes('system-injected-ad')) return;
+            
+            // Block if it's an external http/https link
+            const url = new URL(target.href, window.location.href);
+            if(url.protocol.startsWith('http') && url.hostname !== window.location.hostname) {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('Blocked external link to:', target.href);
+            }
+        }
+    }, true); // use capture phase to catch event early
+})();
+</script>
+
+<!-- RECTANGULAR BANNER PLACEHOLDER -->
+<div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 2147483647; display: flex; flex-direction: column; align-items: center; pointer-events: auto;">
+  <a href="https://your-other-website.com" target="_blank" class="system-injected-ad" style="display: flex; justify-content: center; align-items: center; width: 320px; height: 50px; background-color: #eab308; color: #1e3a8a; text-decoration: none; font-family: Arial, sans-serif; font-weight: 900; font-size: 16px; border: 2px solid #ca8a04; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    YOUR AD HERE
+  </a>
+</div>
+<!-- /SYSTEM_INJECTED_AD_BLOCKER -->
+
+</body>
+
+</html>
